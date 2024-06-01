@@ -14,10 +14,10 @@ app.use(logger);
 
 // 首页
 app.get("/", async (req, res) => {
-  res.sendFile(path.join(__dirname, "index.html"));
+  // res.sendFile(path.join(__dirname, "index.html"));
   console.log("接收到请求1", req);
 
-  return true;
+  res.send(true);
 });
 
 // 更新计数
